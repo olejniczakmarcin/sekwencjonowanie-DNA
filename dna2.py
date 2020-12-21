@@ -23,7 +23,7 @@ DNALettersDict = {0: "A", 1: "T", 2: "C", 3: "G"}
 #===============================================================================================
 #Generate DNA sequence for the test
 #===============================================================================================
-OriginalDNALength = 1000
+OriginalDNALength = 5000
 OriginalDNASeq = [DNALettersDict[random.randint(0, 3)] for i in range(OriginalDNALength)]
 #print(OriginalDNASeq)
 #===============================================================================================
@@ -92,6 +92,7 @@ if OriginalDNASeq==first_el:
     print(len(ListOfFragments1),'\n')
     print("THE SAME\n")
     print(first_el)
+#Save to the file
     if os.path.exists('dna.txt'):
         os.remove('dna.txt')
     f=open('dna.txt','a+')
